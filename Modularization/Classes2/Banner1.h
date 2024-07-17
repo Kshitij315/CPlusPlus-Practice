@@ -29,7 +29,9 @@ public:
     }
 
     // a const method does not change the state of the object
-    // on which it is called
+    // on which it is called i.e it treats the instance addressed
+    //by this argument as read-only
+    //double Banner::Price(const Banner* this)
     double Price() const
     {
         float k = triangular ? 0.5 : 1.0;
