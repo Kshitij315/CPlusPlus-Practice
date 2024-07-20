@@ -119,7 +119,7 @@ int main()
         //p->AddInterest();
         //
         Profitable* p = dynamic_cast<Profitable*>(s);
-        if (p)
+        if (p!=nullptr) 
                 p->AddInterest();
         printf("Account with id:%d has bal of %lf\n", s->GetId(), s->GetBalance());
 
